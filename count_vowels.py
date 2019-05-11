@@ -4,7 +4,7 @@ vowel_list = ["a", "e", "i", "o", "u"]
 vowel_count = 0 # Try removing this first.
 
 # Counts the number of vowels in the inputted string.
-user_input = input("Please enter a string: ")
+user_input = str.lower(input("Please enter a string: "))
 for i in range(len(user_input)):
     if user_input[i] in vowel_list:
         vowel_count += 1
@@ -17,4 +17,5 @@ elif vowel_count == 1:
 else:
     print(f"There are {vowel_count} vowels.")
 
-# This is a test.
+# Reports the sum of each vowels in the inputted string.
+
